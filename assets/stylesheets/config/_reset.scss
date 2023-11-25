@@ -11,6 +11,23 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-family: 'Poppins', Arial;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: $colors_white;
+}
+p, ol, ul, span{
+  color: $color_body-text
+}
+
+body{
+  min-height: 100vh;
+  background: linear-gradient(122deg, #0C112C 19.3%, #0A0611 100%);
+}
+
+input{
+  border: none;
 }
 
 button {
