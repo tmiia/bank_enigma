@@ -1,0 +1,24 @@
+button, a {
+  font-size: 18px;
+  font-weight: 400;
+}
+.btn_primary{
+  padding: 1rem;
+  background-color: $color_primary;
+  border-radius: 50px;
+  color: #E3E7FF;
+  width: 100%;
+  transition: background-color .3s ease-in-out;
+  &:hover{
+    background-color: darken($color: $color_primary, $amount: 10%);
+  }
+}
+
+.btn_secondary{
+  color: $color_primary-darker;
+  font-weight: 300;
+  text-decoration: underline;
+  &:hover{
+    color: darken($color: $color_primary, $amount: 10%);
+  }
+}

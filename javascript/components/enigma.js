@@ -5,6 +5,7 @@ const enigma = {
   init(){
     //Appel de mes fonctions
     this.isCorrect();
+    this.showHint();
   },
 
   isCorrect(){
@@ -16,6 +17,14 @@ const enigma = {
       else {
         console.log("Faux !")
       }
+    })
+  },
+
+  showHint(){
+    let btn_hint = document.querySelector("#btn_hint");
+    let hint = document.querySelector(".hint");
+    btn_hint.addEventListener("click", () => {
+      hint.classList.add("active");
     })
   },
 }

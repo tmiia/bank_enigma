@@ -1,0 +1,22 @@
+form{
+  input{
+    background-color: rgba(213, 218, 241, 0.16);
+    padding: 1rem;
+    border-radius: 15px;
+    color: #999EB6;
+    width: 100%;
+    &::placeholder{
+      font-size: 14px;
+      color: #999EB6;
+    }
+  }
+}
+.hint, .alert{
+  display: none;
+  & > p {
+    text-align: center;
+  }
+  &.active{
+    display: block;
+  }
+}

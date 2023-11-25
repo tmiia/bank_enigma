@@ -14,13 +14,25 @@
     </div>
   </header>
   <main>
-    <section>
+    <section class="sign_in">
+      <header>
+        <h2>Content de vous revoir</h2>
+        <p>Entrez votre mot de passe pour accéder à votre compte en banque</p>
+      </header>
       <form>
         <input type="text" placeholder="Mot de passe" id="password_input">
+        <div class="form_action">
+          <button type="button" id="btn_hint" class="btn_secondary">Mot de passe oublié ?</button>
+          <div class="alert">
+            <p>Mot de passe incorrect !</p>
+          </div>
+          <div class="hint">
+            <span>Indice du mot de passe :</span>
+            <p>“1984 George Orwell” Livre préféré de Frank</p>
+          </div>
+          <button type="button" id="btn_enigma" class="btn_primary">Connecter</button>
+        </div>
       </form>
-      <button id="btn_enigma">
-        Connecter
-      </button>
     </section>
     //Illustrative image
   </main>
