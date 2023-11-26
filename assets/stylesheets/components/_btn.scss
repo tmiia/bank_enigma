@@ -18,6 +18,7 @@ button, a {
   color: $color_primary-darker;
   font-weight: 300;
   text-decoration: underline;
+  transition: color .3s ease-in-out;
   &:hover{
     color: darken($color: $color_primary, $amount: 10%);
   }

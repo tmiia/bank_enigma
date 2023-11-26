@@ -98,6 +98,7 @@ button, a {
   color: #5061c0df;
   font-weight: 300;
   text-decoration: underline;
+  transition: color 0.3s ease-in-out;
 }
 .btn_secondary:hover {
   color: #3b4aa3;
