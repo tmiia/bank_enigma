@@ -17,6 +17,12 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 h1, h2, h3, h4, h5, h6{
   color: $colors_white;
 }
+
+h2{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 p, ol, ul, span{
   color: $color_body-text
 }
