@@ -46,6 +46,11 @@ button {
   padding: 0;
 }
 
+header.main-header {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
 form input {
   background-color: rgba(213, 218, 241, 0.16);
   padding: 1rem;
