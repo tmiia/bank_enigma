@@ -29,6 +29,7 @@ p, ol, ul, span {
 body {
   min-height: 100vh;
   background: linear-gradient(122deg, #0C112C 19.3%, #0A0611 100%);
+  overflow: hidden;
 }
 
 input {
@@ -120,6 +121,15 @@ button, a {
   width: 30vw;
   margin-left: 50vw;
   transform: translateX(-100%);
+}
+
+main {
+  position: relative;
+}
+main #illu_credit-card {
+  position: absolute;
+  top: 0;
+  right: -12%;
 }
 
 section header {
