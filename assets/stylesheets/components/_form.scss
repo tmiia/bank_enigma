@@ -9,6 +9,9 @@ form{
       font-size: 14px;
       color: #999EB6;
     }
+    &.alert_indicator{
+      border: 1px solid $color_alert;
+    }
   }
 }
 .hint, .alert{
@@ -16,7 +19,20 @@ form{
   & > p {
     text-align: center;
   }
+  p, span{
+    font-weight: 300;
+  }
   &.active{
     display: block;
+  }
+}
+.hint{
+  p{
+    font-style: italic;
+  }
+}
+.alert{
+  p, span{
+    color: $color_alert;
   }
 }

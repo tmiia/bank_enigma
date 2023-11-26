@@ -3,7 +3,6 @@ const enigma = {
   answer: "novlangue",
 
   init(){
-    //Appel de mes fonctions
     this.isCorrect();
     this.showHint();
   },
@@ -15,7 +14,7 @@ const enigma = {
         console.log("Bravo");
       }
       else {
-        console.log("Faux !")
+        enigma.showAlert();
       }
     })
   },
@@ -26,6 +25,12 @@ const enigma = {
     btn_hint.addEventListener("click", () => {
       hint.classList.add("active");
     })
+  },
+
+  showAlert(){
+    let alert = document.querySelector(".alert");
+    alert.classList.add("active");
+    enigma.input.classList.add("alert_indicator");
   },
 }
 export default enigma

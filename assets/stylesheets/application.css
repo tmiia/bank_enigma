@@ -52,6 +52,9 @@ form input::placeholder {
   font-size: 14px;
   color: #999EB6;
 }
+form input.alert_indicator {
+  border: 1px solid rgba(255, 107, 107, 0.7);
+}
 
 .hint, .alert {
   display: none;
@@ -59,8 +62,19 @@ form input::placeholder {
 .hint > p, .alert > p {
   text-align: center;
 }
+.hint p, .hint span, .alert p, .alert span {
+  font-weight: 300;
+}
 .hint.active, .alert.active {
   display: block;
+}
+
+.hint p {
+  font-style: italic;
+}
+
+.alert p, .alert span {
+  color: rgba(255, 107, 107, 0.7);
 }
 
 button, a {
