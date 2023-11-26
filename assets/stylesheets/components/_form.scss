@@ -14,11 +14,13 @@ form{
     }
   }
 }
+#btn_hint{
+  &.active{
+    display: none;
+  }
+}
 .hint, .alert{
   display: none;
-  & > p {
-    text-align: center;
-  }
   p, span{
     font-weight: 300;
   }
@@ -34,5 +36,6 @@ form{
 .alert{
   p, span{
     color: $color_alert;
+    text-align: center;
   }
 }

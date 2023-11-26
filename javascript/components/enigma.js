@@ -24,6 +24,7 @@ const enigma = {
     let hint = document.querySelector(".hint");
     btn_hint.addEventListener("click", () => {
       hint.classList.add("active");
+      btn_hint.classList.add("active");
     })
   },
 

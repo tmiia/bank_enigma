@@ -56,11 +56,12 @@ form input.alert_indicator {
   border: 1px solid rgba(255, 107, 107, 0.7);
 }
 
-.hint, .alert {
+#btn_hint.active {
   display: none;
 }
-.hint > p, .alert > p {
-  text-align: center;
+
+.hint, .alert {
+  display: none;
 }
 .hint p, .hint span, .alert p, .alert span {
   font-weight: 300;
@@ -75,6 +76,7 @@ form input.alert_indicator {
 
 .alert p, .alert span {
   color: rgba(255, 107, 107, 0.7);
+  text-align: center;
 }
 
 button, a {
@@ -82,7 +84,7 @@ button, a {
   font-weight: 400;
 }
 
-.btn_primary {
+.btn-primary {
   padding: 1rem;
   background-color: #5061C0;
   border-radius: 50px;
@@ -90,7 +92,7 @@ button, a {
   width: 100%;
   transition: background-color 0.3s ease-in-out;
 }
-.btn_primary:hover {
+.btn-primary:hover {
   background-color: #3b4aa3;
 }
 
@@ -106,6 +108,23 @@ button, a {
 
 .sign_in {
   width: 35vw;
+}
+
+section header {
+  margin-bottom: 32px;
+}
+section header h2 + p {
+  margin-top: 8px;
+}
+
+form .form_action {
+  margin-top: 16px;
+}
+form .form_action .alert + .hint, form .form_action #btn_hint + .alert {
+  margin-top: 16px;
+}
+form .form_action .btn-primary {
+  margin-top: 32px;
 }
 
 /*# sourceMappingURL=application.css.map */

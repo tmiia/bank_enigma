@@ -1,0 +1,20 @@
+section{
+  header{
+    margin-bottom: 32px;
+    h2 + p{
+      margin-top: 8px;
+    }
+  }
+}
+
+form{
+  .form_action{
+    margin-top: 16px;
+    .alert + .hint, #btn_hint + .alert{
+      margin-top: 16px;
+    }
+    .btn-primary{
+      margin-top: 32px;
+    }
+  }
+}
