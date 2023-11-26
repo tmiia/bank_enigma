@@ -11,7 +11,7 @@ const enigma = {
     let btn_next = document.querySelector("#btn_enigma");
     btn_next.addEventListener("click", () => {
       if (enigma.input.value == enigma.answer) {
-        console.log("Bravo");
+        enigma.showNextStep();
       }
       else {
         enigma.showAlert();
@@ -33,5 +33,12 @@ const enigma = {
     alert.classList.add("active");
     enigma.input.classList.add("alert_indicator");
   },
+
+  showNextStep(){
+    let nextStep = document.querySelector(".bravo");
+    let currentStep = document.querySelector(".sign_in");
+    nextStep.classList.toggle("change");
+    currentStep.classList.toggle("change");
+  }
 }
 export default enigma

@@ -117,12 +117,6 @@ button, a {
   color: #3b4aa3;
 }
 
-.sign_in {
-  width: 30vw;
-  margin-left: 50vw;
-  transform: translateX(-100%);
-}
-
 main {
   position: relative;
 }
@@ -130,6 +124,23 @@ main #illu_credit-card {
   position: absolute;
   top: 0;
   right: -12%;
+}
+
+section {
+  width: 30vw;
+  margin-left: 50vw;
+  transform: translateX(-100%);
+}
+
+.sign_in.change {
+  display: none;
+}
+
+.bravo {
+  display: none;
+}
+.bravo.change {
+  display: block;
 }
 
 section header {

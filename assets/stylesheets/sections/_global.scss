@@ -1,0 +1,18 @@
+section{
+  width: 30vw;
+  margin-left: 50vw;
+  transform: translateX(-100%);
+}
+
+.sign_in{
+  &.change{
+    display: none;
+  }
+}
+
+.bravo{
+  display: none;
+  &.change{
+    display: block;
+  }
+}
