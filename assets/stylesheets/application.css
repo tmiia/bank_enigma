@@ -13,6 +13,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-family: "Poppins", Arial;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #E3E7FF;
 }
@@ -132,6 +136,40 @@ main #illu_credit-card {
   position: absolute;
   top: 0;
   right: -12%;
+}
+
+.notification {
+  position: absolute;
+  right: 32px;
+  top: -30%;
+  display: none;
+  gap: 16px;
+  padding: 16px;
+  background-color: rgba(12, 17, 44, 0.59);
+  border: 1px solid rgba(107, 131, 255, 0.2);
+  border-radius: 20px;
+  max-width: 350px;
+  cursor: pointer;
+}
+.notification.active {
+  display: flex;
+}
+.notification .notification_logo {
+  display: flex;
+  align-items: center;
+}
+.notification .notification_content header, .notification .notification_content p {
+  font-weight: 300;
+}
+.notification .notification_content header + p {
+  margin-top: 8px;
+}
+.notification .notification_content header {
+  display: flex;
+  justify-content: space-between;
+}
+.notification .notification_content header .notification_date {
+  font-size: 14px;
 }
 
 section {
