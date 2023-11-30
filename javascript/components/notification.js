@@ -17,8 +17,7 @@ const notification = {
     let audio = document.getElementById("audioNotif");
     audio.play();
   }
-
-  // TODO: Add a sound when show notification
+  
   // TODO: Add a slide animation when show notification
 
 }

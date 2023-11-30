@@ -1,6 +1,6 @@
 const enigma = {
   input: document.querySelector("#password_input"),
-  answer: "novlangue",
+  answer: "Ampleforth",
 
   init(){
     this.isCorrect();
